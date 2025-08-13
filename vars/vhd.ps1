@@ -1,18 +1,16 @@
-# Проверяем, существует ли папка
-
 $vhdFolder = "D:\Hyper-V"
 
 $vmFolder = Join-Path -Path $vhdFolder -ChildPath $vmName
 
-
 if (-not (Test-Path $vmFolder)) {
-        # Создать папку
+        # Г‘Г®Г§Г¤Г ГІГј ГЇГ ГЇГЄГі
         New-Item -ItemType Directory -Path $vmFolder 
-        Write-Host "Папка '$vmName' создана"
+        Write-Host "РџР°РїРєР° '$vmName' СЃРѕР·РґР°РЅР°"
 }
  else {
-    Write-Host "Папка '$vmFolder' уже существует."
+    Write-Host "РџР°РїРєР° '$vmFolder' СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚."
 }
 
 $vhdPath = Join-Path $vmFolder "$vmName.vhdx"
+
 
