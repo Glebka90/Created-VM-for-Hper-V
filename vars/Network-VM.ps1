@@ -1,4 +1,5 @@
 #Get-VMSwitch
-Write-Host "Список коммутаторов:"
+Write-Host "РЎРїРёСЃРѕРє РєРѕРјРјСѓС‚Р°С‚РѕСЂРѕРІ:"
 Get-VMSwitch | ForEach-Object { Write-Host " - $_.Name" }
-$switchName = Read-Host "Укажите комутатор (Список комутаторов Get-VMSwitch)"
+
+$switchName = Read-Host "РЈРєР°Р¶РёС‚Рµ РєРѕРјСѓС‚Р°С‚РѕСЂ:"
